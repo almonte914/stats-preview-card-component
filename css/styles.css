@@ -1,81 +1,110 @@
-body {
-  background-color: hsl(233, 47%, 7%);
-  
-  font-size: 15px;
-}
-* {  box-sizing: border-box;
-}
-.font1 {
-    font-family: "Inter", sans-serif;
-    font-weight: 400, 700;
-    color: hsl(0, 0%, 100%);
-}
-.font2 {
-    font-family: "Lexend", sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    color: hsla(0, 0%, 100%, 0.6);
-    text-transform: uppercase;
-}
-.flex-container{ 
-    display: flex;
-    flex-direction: row;
-    margin: px;
-    text-align: center;
-    border: solid;
-    border-color: white;
-    padding: px;
-    border-radius: ;
-}
-.container1 {
-    
-    flex: 50%;
+body { 
+    margin:100px; 
+      background-color: hsl(233, 47%, 7%);
     justify-content: center;
-    padding: 25px;
-    background-color: hsl(244, 38%, 16%);
+  font-family: "Lexend Deca", sans-serif;
+  align-items: center;
+
 }
 
-.container2 {
-    background: hsl(277, 64%, 61%);
-    flex: 50%;
-    opacity: ;
-}
-.voilet {
-    color: hsl(277, 64%, 61%)
-}
-/* Responsive layout - makes a one column-layout instead of two-column layout */
-@media (max-width: 800px) {
-.flex-container {
-    flex-direction: column-reverse;
+.fc > * {
+  margin:px;
+  padding:20px; 
+  background-color:;
+  border-radius: 10px;
 }
 
-img {
-    display: block;
-    width: 100;
-    height: ;
-    opacity: ;
-    padding-bottom: px;
+/* initialize flexbox container and flexbox items */
+.fc { 
+  display:flex;
+  flex-flow: row wrap-reverse;
 }
+.fc > * { 
+  flex: 1; 
+}
+.fc > * { min-width: 200px; } 
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  color: white;
-}
+/* ensure flex-container is always at least as tall as the viewport, 
+minus the height of the header and footer combined. 
 */
-.card {
-  border: solid;
-  border-color: white;
-  border-radius: 5px;
-}
-.statement {
-    font-family: "Lexend", sans-serif;
-    font-weight: 400;
-    font-size: 15px;
+.fc { min-height: 50vh
+} 
+aside {
+    background-color: hsl(244, 38%, 16%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+    font-family: "Inter", sans-serif;
+  font-weight: 400;
+
+}
+main {
+    background-color: hsl(277, 64%, 61%);
+    border-radius: ;
+    padding: ;
+}
+.image-header {
+  background-color: yellow; /* hsl(277, 64%, 61%); */
+  height: 0%;
+  border-radius: 10px 10px 0 0;
+  padding: ;
+}
+.image-header img {
+  opacity: 0.7;
+  height: 100%;
+  width: 100;
+  border-radius:10px 10px 0 0;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+.mobile {
+  display: block;
+}
+.desktop {
+  display: none;
+}
+
+.main-paragraph {
   color: hsla(0, 0%, 100%, 0.75);
 }
+.stat-heading {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 700;
+}
+h2 {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  padding: px;
+}
+.status {
+  padding-bottom: 25px;
+}
+.stat {
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: px;
+}
 
-.attribution a {
+.accent {
+  color: hsl(277, 64%, 61%);
+}
+.attribution {
   color: white;
+  text-align: center;
+}
+.attribution a {
+  color: yellow;
+}
+footer{
+    align-content: center;
+    padding-top: 100;
 }
