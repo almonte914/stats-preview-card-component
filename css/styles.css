@@ -11,7 +11,7 @@ body {
   margin:px;
   padding:20px; 
   background-color:;
-  border-radius: 10px;
+  border-radius: px;
 }
 
 /* initialize flexbox container and flexbox items */
@@ -29,14 +29,14 @@ minus the height of the header and footer combined.
 */
 .fc { min-height: 50vh
 } 
-aside {
+.info {
     background-color: hsl(244, 38%, 16%);
   color: hsl(0, 0%, 100%);
   font-family: "Inter", sans-serif;
   font-weight: 400;
   text-align: center;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: ;
     font-family: "Inter", sans-serif;
   font-weight: 400;
 
@@ -46,20 +46,26 @@ main {
     border-radius: ;
     padding: ;
 }
-.image-header {
-  background-color: yellow; /* hsl(277, 64%, 61%); */
-  height: 0%;
-  border-radius: 10px 10px 0 0;
-  padding: ;
+.graphic {
+    background-image:url(images/image-header-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  background-color: hsl(277, 64%, 61%);
+    background-blend-mode: multiply;
+    width: auto;
+    
+        
 }
+/*
 .image-header img {
   opacity: 0.7;
-  height: 100%;
-  width: 100;
-  border-radius:10px 10px 0 0;
+  height: %;
+  width: ;
+  border-radius:;
   object-fit: cover;
   mix-blend-mode: multiply;
-}
+}*/
 .mobile {
   display: block;
 }
